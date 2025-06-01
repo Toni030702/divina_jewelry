@@ -15,14 +15,15 @@ body {
   color: #252525;
   font-weight: 400;
   background-color: #f7f2e9;
-  border-bottom: 1.6rem solid #edc84b;
+  color: #b5a192;
+  border-bottom: 1.6rem solid #b08463;
   min-height: 100vh;
   padding: 3.2rem;
   padding-bottom: 6rem;
 }
 
 .container {
-  max-width: 80rem;
+  max-width: 120rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -37,12 +38,12 @@ body {
 }
 
 .header h1 {
-  color: #edc84b;
-  text-transform: uppercase;
+  color: #b08463;
   text-align: center;
-  font-size: 5.2rem;
+  font-size: 10rem;
+  font-family: 'Monsieur La Doulaise';
   font-weight: 300;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   position: relative;
   width: 100%;
   display: block;
@@ -54,7 +55,7 @@ body {
   content: "";
   height: 3px;
   width: 12rem;
-  background-color: #edc84b;
+  background-color: #b08463;
   position: absolute;
   top: calc(50% - 1px);
 }
@@ -87,6 +88,7 @@ main {
   font-weight: 500;
   margin-bottom: 2.4rem;
   text-align: center;
+  color: 	#b08463;
 }
 
 .articles {
@@ -108,7 +110,7 @@ main {
 }
 
 .article img {
-  width: 12rem;
+  width: 30rem;
   aspect-ratio: 1;
   object-fit: cover;
   align-self: start;
@@ -139,7 +141,7 @@ main {
   font-size: 1.4rem;
   text-align: center;
   padding-top: 2rem;
-  color: #555;
+  color: #b5a192;
   border-top: 1px solid #ccc;
   width: 100%;
 }

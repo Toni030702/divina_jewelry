@@ -5,55 +5,55 @@ import './index.css';
 const articleData = [
   {
     name: "divinica 1",
-    photoName: "images/nausnica.jpg",
+    photoName: "/images/nausnica.jpg",
     price: "6$",
     category: "nausnice"
   },
   {
     name: "divinica 11",
-    photoName: "images/nausnica.jpg",
+    photoName: "/images/nausnica.jpg",
     price: "6$",
     category: "nausnice"
   },
   {
     name: "divinica 2",
-    photoName: "images/nausnica.jpg",
+    photoName: "/images/nausnica.jpg",
     price: "7$",
     category: "nausnice"
   },
   {
     name: "divinica 3",
-    photoName: "images/narukvica.jpg",
+    photoName: "/images/narukvica.jpg",
     price: "8$",
     category: "narukvice"
   },
   {
     name: "divinica 33",
-    photoName: "images/narukvica.jpg",
+    photoName: "/images/narukvica.jpg",
     price: "8$",
     category: "narukvice"
   },
   {
     name: "divinica 4",
-    photoName: "images/narukvica.jpg",
+    photoName: "/images/narukvica.jpg",
     price: "6$",
     category: "narukvice"
   },
   {
     name: "divinica 5",
-    photoName: "images/ogrlica.jpg",
+    photoName: "/images/ogrlica.jpg",
     price: "6$",
     category: "ogrlice"
   },
   {
     name: "divinica 10",
-    photoName: "images/ogrlica.jpg",
+    photoName: "/images/ogrlica.jpg",
     price: "6$",
     category: "ogrlice"
   },
   {
     name: "divinica 6",
-    photoName: "images/ogrlica.jpg",
+    photoName: "/images/ogrlica.jpg",
     price: "22$",
     category: "ogrlice"
   }
@@ -68,7 +68,6 @@ function App() {
     </div>
   );
 }
-
 
 function Header() {
   return <header className='header'><h1>Divina Jewelry</h1></header>
@@ -103,7 +102,6 @@ function CategorySection({ title, items }) {
   );
 }
 
-
 function Article({articleObj}) {
   return(
     <li className='article'>
@@ -121,7 +119,6 @@ function Footer() {
             <p>Instagram</p>
           </footer>
 }
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/divina_jewelry/static/css/main.dbe0f573.css",
+    "main.js": "/divina_jewelry/static/js/main.6de1207d.js",
+    "index.html": "/divina_jewelry/index.html",
+    "main.dbe0f573.css.map": "/divina_jewelry/static/css/main.dbe0f573.css.map",
+    "main.6de1207d.js.map": "/divina_jewelry/static/js/main.6de1207d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dbe0f573.css",
+    "static/js/main.6de1207d.js"
+  ]
+}

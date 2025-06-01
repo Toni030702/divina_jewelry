@@ -83,7 +83,7 @@ main {
   border-top: 2px solid currentColor;
   border-bottom: 2px solid currentColor;
   font-size: 2.4rem;
-  text-transform: uppercase;
+  font-family: "Delius Swash Caps", cursive;
   letter-spacing: 3px;
   font-weight: 500;
   margin-bottom: 2.4rem;

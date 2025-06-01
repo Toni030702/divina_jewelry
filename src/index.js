@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 
 const articleData = [
+  {/* ---------- Nausnice ---------- */},
   {
     name: "divinica 1",
     photoName: "/images/nausnica.jpg",
@@ -21,6 +22,7 @@ const articleData = [
     price: "7$",
     category: "nausnice"
   },
+  {/* ---------- Narukvice ---------- */},
   {
     name: "divinica 3",
     photoName: "/images/narukvica.jpg",
@@ -39,6 +41,7 @@ const articleData = [
     price: "6$",
     category: "narukvice"
   },
+  {/* ---------- Ogrlice ---------- */},
   {
     name: "divinica 5",
     photoName: "/images/ogrlica.jpg",

@@ -1,79 +1,107 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
 
 const articleData = [
-  {/* ---------- Nausnice ---------- */},
+  {
+    /* ---------- Nausnice ---------- */
+  },
   {
     name: "divinica 1",
     photoName: "nausnica.jpg",
     price: "6$",
-    category: "nausnice"
+    category: "nausnice",
+    about: "Elegantne naušnice sa modernim dizajnom.",
   },
   {
     name: "divinica 11",
     photoName: "nausnica.jpg",
     price: "6$",
-    category: "nausnice"
+    category: "nausnice",
+    about: "Elegantne naušnice sa modernim dizajnom.",
   },
   {
     name: "divinica 2",
     photoName: "nausnica.jpg",
     price: "7$",
-    category: "nausnice"
+    category: "nausnice",
+    about: "Elegantne naušnice sa modernim dizajnom.",
   },
-  {/* ---------- Narukvice ---------- */},
   {
-    name: "divinica 3",
+    /* ---------- Narukvice ---------- */
+  },
+  {
+    name: "DIVINICA 3",
     photoName: "narukvica.jpg",
     price: "8$",
-    category: "narukvice"
+    category: "narukvice",
+    about: "Elegantne naušnice sa modernim dizajnom.",
   },
   {
     name: "divinica 33",
     photoName: "narukvica.jpg",
     price: "8$",
-    category: "narukvice"
+    category: "narukvice",
+    about: "Elegantne naušnice sa modernim dizajnom.",
   },
   {
     name: "divinica 4",
     photoName: "narukvica.jpg",
     price: "6$",
-    category: "narukvice"
+    category: "narukvice",
+    about: "Elegantne naušnice sa modernim dizajnom.",
   },
-  {/* ---------- Ogrlice ---------- */},
+  {
+    /* ---------- Ogrlice ---------- */
+  },
   {
     name: "divinica 5",
     photoName: "ogrlica.jpg",
     price: "6$",
-    category: "ogrlice"
+    category: "ogrlice",
+    about: "Elegantne naušnice sa modernim dizajnom.",
   },
   {
     name: "divinica 10",
     photoName: "ogrlica.jpg",
     price: "6$",
-    category: "ogrlice"
+    category: "ogrlice",
+    about: "Elegantne naušnice sa modernim dizajnom.",
   },
   {
     name: "divinica 6",
     photoName: "ogrlica.jpg",
     price: "22$",
-    category: "ogrlice"
-  }
+    category: "ogrlice",
+    about: "Elegantne naušnice sa modernim dizajnom.",
+  },
 ];
 
 function App() {
   return (
     <div className="container">
       <Header />
+      <Narudzbe />
       <List />
-      <Footer />
     </div>
   );
 }
 
 function Header() {
-  return <header className='header'><h1>Divina Jewelry</h1></header>
+  return (
+    <header className="header">
+      <h1>Divina jewelry</h1>
+    </header>
+  );
+}
+
+function Narudzbe() {
+  return (
+    <div className="narudzbe">
+      <p>Sve narudžbe možete napraviti putem DM-a na instagramu profilu:</p>
+      <p className="centered">@divinajewelry__</p>
+    </div>
+  );
 }
 
 function List() {
@@ -105,28 +133,25 @@ function CategorySection({ title, items }) {
   );
 }
 
-function Article({articleObj}) {
-  return(
-    <li className='article'>
-      <img src={process.env.PUBLIC_URL + "/images/" + articleObj.photoName} alt={articleObj.name} />
+function Article({ articleObj }) {
+  return (
+    <li className="article">
+      <img
+        src={process.env.PUBLIC_URL + "/images/" + articleObj.photoName}
+        alt={articleObj.name}
+      />
       <div>
         <h3>{articleObj.name}</h3>
+        <p className="about">{articleObj.about}</p>
         <p>{articleObj.price}</p>
       </div>
     </li>
-  )
+  );
 }
 
-function Footer() {
-  return <footer className='footer'>
-            <p>Instagram</p>
-          </footer>
-}
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
-

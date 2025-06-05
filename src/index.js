@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
@@ -134,18 +134,41 @@ function CategorySection({ title, items }) {
 }
 
 function Article({ articleObj }) {
+  const [zoomed, setZoomed] = useState(false);
   return (
     <li className="article">
       <img
         src={process.env.PUBLIC_URL + "/images/" + articleObj.photoName}
         alt={articleObj.name}
+        onClick={() => setZoomed(true)}
+        style={{ cursor: "zoom-in" }}
       />
       <div>
         <h3>{articleObj.name}</h3>
         <p className="about">{articleObj.about}</p>
         <p>{articleObj.price}</p>
       </div>
+      {zoomed && (
+        <ZoomModal
+          src={process.env.PUBLIC_URL + "/images/" + articleObj.photoName}
+          alt={articleObj.name}
+          onClose={() => setZoomed(false)}
+        />
+      )}
     </li>
+  );
+}
+
+function ZoomModal({ src, alt, onClose }) {
+  return (
+    <div className="zoom-modal" onClick={onClose}>
+      <div className="zoom-modal-content" onClick={(e) => e.stopPropagation()}>
+        <img src={src} alt={alt} className="zoom-img" />
+        <button className="close-btn" onClick={onClose} aria-label="Close">
+          &times;
+        </button>
+      </div>
+    </div>
   );
 }
 

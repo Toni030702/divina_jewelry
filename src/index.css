@@ -137,6 +137,50 @@ main {
   font-size: 2.4rem;
 }
 
+.zoom-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.zoom-modal-content {
+  position: relative;
+}
+.zoom-img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 0 16px #000a;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px #b47bff;
+  color: #b08463;
+  transition: background 0.2s, color 0.2s;
+}
+.close-btn:hover {
+  background: #f7f2e9;
+  color: #a06b3b;
+}
+
 @media (max-width: 900px) {
   .article img {
     width: 30rem;

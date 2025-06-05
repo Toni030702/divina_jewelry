@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/divina_jewelry/static/css/main.0ef63109.css",
-    "main.js": "/divina_jewelry/static/js/main.3d9f8362.js",
+    "main.css": "/divina_jewelry/static/css/main.977bed1d.css",
+    "main.js": "/divina_jewelry/static/js/main.2892d86a.js",
     "index.html": "/divina_jewelry/index.html",
-    "main.0ef63109.css.map": "/divina_jewelry/static/css/main.0ef63109.css.map",
-    "main.3d9f8362.js.map": "/divina_jewelry/static/js/main.3d9f8362.js.map"
+    "main.977bed1d.css.map": "/divina_jewelry/static/css/main.977bed1d.css.map",
+    "main.2892d86a.js.map": "/divina_jewelry/static/js/main.2892d86a.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ef63109.css",
-    "static/js/main.3d9f8362.js"
+    "static/css/main.977bed1d.css",
+    "static/js/main.2892d86a.js"
   ]
 }
